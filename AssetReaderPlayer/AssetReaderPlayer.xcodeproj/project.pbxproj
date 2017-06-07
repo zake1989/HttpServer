@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEBC00911EE5655900EBF50B /* MTPlayerAudioQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBC008F1EE5655900EBF50B /* MTPlayerAudioQueue.m */; };
 		AEFD862A1EE10F200076C99D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD86291EE10F200076C99D /* main.m */; };
 		AEFD862D1EE10F200076C99D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD862C1EE10F200076C99D /* AppDelegate.m */; };
 		AEFD86301EE10F200076C99D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD862F1EE10F200076C99D /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AEBC008F1EE5655900EBF50B /* MTPlayerAudioQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPlayerAudioQueue.m; sourceTree = "<group>"; };
+		AEBC00901EE5655900EBF50B /* MTPlayerAudioQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPlayerAudioQueue.h; sourceTree = "<group>"; };
 		AEFD86251EE10F200076C99D /* AssetReaderPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssetReaderPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFD86291EE10F200076C99D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AEFD862B1EE10F200076C99D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 			children = (
 				AEFD86421EE110E20076C99D /* ReaderPlayer.h */,
 				AEFD86431EE110E20076C99D /* ReaderPlayer.m */,
+				AEBC00901EE5655900EBF50B /* MTPlayerAudioQueue.h */,
+				AEBC008F1EE5655900EBF50B /* MTPlayerAudioQueue.m */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBC00911EE5655900EBF50B /* MTPlayerAudioQueue.m in Sources */,
 				AEFD86301EE10F200076C99D /* ViewController.m in Sources */,
 				AEFD86441EE110E20076C99D /* ReaderPlayer.m in Sources */,
 				AEFD862D1EE10F200076C99D /* AppDelegate.m in Sources */,
@@ -327,6 +333,7 @@
 				AEFD863E1EE10F200076C99D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

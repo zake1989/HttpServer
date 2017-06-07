@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#include <pthread.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController  
 
 
 @end
