@@ -10,7 +10,8 @@
 #import "MTFileManager.h"
 #import "NSString+Hash.h"
 
-#define urlString @"http://fujifilm-indonesia.co.id/Products/digital_cameras/x/fujifilm_x_m1/sample_images/img/index/ff_x_m1_020.JPG"
+//#define urlString @"http://fujifilm-indonesia.co.id/Products/digital_cameras/x/fujifilm_x_m1/sample_images/img/index/ff_x_m1_020.JPG"
+#define urlString @"http://mvvideo11.meitudata.com/59463cb8a205d9719.mp4"
 #define TotalLengthFile [MTFileManager documentFilePathWithAppendPath:@"totalLength"]
 
 @interface ViewController () <NSURLSessionDataDelegate>
@@ -93,17 +94,16 @@
           dataTask:(NSURLSessionDataTask *)dataTask
 didReceiveResponse:(NSURLResponse *)response
  completionHandler:(void (^)(NSURLSessionResponseDisposition))completionHandler {
-    //
+    // 打开输出流文件
     [self.stream open];
-    //
-//    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
-//    NSLog(@"%@",httpResponse);
+    // 获取文件长度
     self.TotalLength = response.expectedContentLength;
     NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithDictionary:[MTFileManager readFileAtPathAsDictionary:TotalLengthFile]];
     if (!dic) {
         dic = [NSMutableDictionary new];
     }
     NSLog(@"%ld",(long)self.TotalLength);
+    // 保存文件长度作为校验是否下载完成的参数
     dic[self.fileName] = @(self.TotalLength);
     [MTFileManager createFileAtPath:TotalLengthFile withContent:dic overwrite:true error:nil];
     
